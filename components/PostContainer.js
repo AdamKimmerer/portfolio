@@ -51,6 +51,10 @@ const StoryContents = styled.section`
   line-height: 1.58;
   margin-bottom: 60px;
 
+  @media (max-width: 850px) {
+    width: 80%;
+  }
+
   h1, h2 {
     font-style: italic;
     margin-top: 40px;

@@ -65,8 +65,9 @@ const DetailsContainer = styled.section`
     width: 50%;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 850px) {
     width: 90%;
+    left: 5%;
   }
 
   h1 {
@@ -135,6 +136,11 @@ const BackHome = styled.nav`
 
   @media (max-width: 1200px) {
     left: 10%;
+    font-size: 16px;
+  }
+
+  @media (max-width: 850px) {
+    left: 5%;
     font-size: 16px;
   }
 `;
