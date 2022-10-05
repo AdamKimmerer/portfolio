@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>[!!!]Adam Kimmerer</title>
+        <title>Adam Kimmerer</title>
         <meta
           name="description"
           content="Adam Kimmerer's Design, Product, and esearch Portfolio."
