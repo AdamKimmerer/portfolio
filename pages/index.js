@@ -37,6 +37,12 @@ export default function Home() {
             </p>
           </BlurbContainer>
           <CardList>
+          <PostLink
+              link="/posts/problem-based-process"
+              title="Problem-Based Strategy"
+              postType="Article"
+              postImage="/images/process-mapping.png"
+            />
             <PostLink
               link="/posts/modernizing-health-data"
               title="Modernizing Health Data"
