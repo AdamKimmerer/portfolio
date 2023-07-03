@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const PostLink = ({ title, postType, postImage, link }) => {
   return (
-    <Link href={link} passHref>
+    <Link 
+      href={link} 
+      passHref
+    >
       <Main>
         <Inner postImage={postImage}>
           <DetailsContainer>
