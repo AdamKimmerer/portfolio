@@ -11,7 +11,7 @@ export default function Home() {
         <title>Adam Kimmerer</title>
         <meta
           name="description"
-          content="Adam Kimmerer's Design, Product, and esearch Portfolio."
+          content="Adam Kimmerer's Design, Product, and Research Portfolio."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -38,10 +38,16 @@ export default function Home() {
           </BlurbContainer>
           <CardList>
           <PostLink
-              link="/posts/problem-based-process"
-              title="Problem-Based Strategy"
+              link="/posts/fake-app-for-real-transformation"
+              title="Fake App for Real Transformation"
               postType="Article"
               postImage="/images/process-mapping.png"
+            />
+            <PostLink
+              link="https://www.figma.com/file/OTNCjDUkd7JB9PfUD2dHIj/Untitled?type=whiteboard&node-id=0%3A1&t=yuWt5iJvP0Id7aHb-1"
+              title="Strategic Design Process Illustrated"
+              postType="External Link"
+              postImage="/images/strategic-design-process.png"
             />
             <PostLink
               link="/posts/modernizing-health-data"

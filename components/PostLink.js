@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-const PostLink = ({ title, postType, postImage, link }) => {
+const PostLink = ({ title, postType, postImage, link, external }) => {
   return (
     <Link 
       href={link} 

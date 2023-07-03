@@ -10,9 +10,9 @@ const Post = () => {
 
   return (
     <PostContainer
-      title="Problem-Based Process"
+      title="Strategic Design Process Illustrated"
       postType="Article"
-      postImage="/images/process-mapping.png"
+      postImage="/images/strategic-design-process.png"
     >
       <h1>Background</h1>
       <p>
