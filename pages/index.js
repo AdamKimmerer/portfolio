@@ -38,6 +38,12 @@ export default function Home() {
           </BlurbContainer>
           <CardList>
           <PostLink
+              link="/posts/know-your-vote"
+              title="Know Your Vote T.O."
+              postType="Showcase"
+              postImage="/images/know-your-vote.png"
+            />
+          <PostLink
               link="/posts/fake-app-for-real-transformation"
               title="Fake App for Real Transformation"
               postType="Article"
