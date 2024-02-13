@@ -1,10 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 import PostLink from "../components/PostLink";
 
 export default function Home() {
+  useEffect(() => {
+    const vid = document.getElementsByTagName("video");
+    console.log(vid[0]);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -17,13 +23,22 @@ export default function Home() {
       </Head>
       <main>
         <LogoContainer>
-          <Image
-            width="1058"
-            height="552"
-            layout="responsive"
-            src="/images/logo.png"
-            alt="Adam Kimmerer"
-          />
+          <VideoContainer>
+            <video width="100%" height="100%" preload="auto" playsInline autoPlay muted loop>
+              <source src="/images/spinning.webm" />
+              Your browser does not support the video tag.
+            </video>
+          </VideoContainer>
+          <GifContainer>
+            <Image
+              src="/images/breathe.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              alt="spinning thing"
+            />
+          </GifContainer>
+          <span>Adam<br/>Kimmerer</span>
         </LogoContainer>
         <Content>
           <BlurbContainer>
@@ -37,13 +52,13 @@ export default function Home() {
             </p>
           </BlurbContainer>
           <CardList>
-          <PostLink
+            <PostLink
               link="/posts/know-your-vote"
               title="Know Your Vote T.O."
               postType="Showcase"
               postImage="/images/know-your-vote.png"
             />
-          <PostLink
+            <PostLink
               link="/posts/fake-app-for-real-transformation"
               title="Fake App for Real Transformation"
               postType="Article"
@@ -87,10 +102,39 @@ export default function Home() {
 }
 
 const LogoContainer = styled.figure`
-  margin-bottom: 30px;
-  margin-top: 70px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1800px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  position: relative;
+  border-bottom: 1px solid #304141;
+
+  span {
+    position: absolute;
+    padding-right: 20%;
+    padding-left: 20%;
+    bottom: 20%;
+    left: 0;
+    font-size: 178px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #fff;
+    -webkit-text-stroke: 4px #304141;
+    font-style: italic;
+    font-weight: bolder;
+  }
+`;
+
+const VideoContainer = styled.div`
+  flex-grow: 1;
+  border-right: 1px solid #304141;
+`;
+
+const GifContainer = styled.div`
+  position: relative;
+  flex: 0 0 35%;
+  border-top: 1px solid #304141;
 `;
 
 const Content = styled.section`
@@ -98,7 +142,7 @@ const Content = styled.section`
   max-width: 1200px;
 
   @media (max-width: 1200px) {
-    padding: 0 5% ;
+    padding: 0 5%;
   }
 `;
 

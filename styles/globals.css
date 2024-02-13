@@ -1,6 +1,7 @@
 body {
-  background: #0D0B0F;
-  color: #252020;
+  background: #F0F0E8;
+  color: #304141;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
+  font-family: Inter;
 }
