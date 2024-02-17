@@ -29,7 +29,7 @@ const Post = () => {
         width="100%"
         height="450"
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqGjeO3dSQo9AZt4w3I333H%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-6125%26viewport%3D-684%252C-1801%252C0.07%26t%3D1nKsOh54013f4TRI-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1%253A6125%26mode%3Ddesign"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <h1>User Research</h1>
       <p>

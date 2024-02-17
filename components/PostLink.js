@@ -1,88 +1,117 @@
 import Link from "next/link";
 import styled from "styled-components";
+import Image from "next/image";
 
-const PostLink = ({ title, postType, postImage, link, external }) => {
+const PostLink = ({ title, postType, postImage, link, external, postTags }) => {
+  const renderTags = postTags.map((tag, i) => {
+    return <div key={i}>{tag}</div>;
+  });
+
   return (
-    <Link 
-      href={link} 
-      passHref
-    >
+    <Link href={link} passHref>
       <Main>
-        <Inner postImage={postImage}>
-          <DetailsContainer>
-            <h1>{title}</h1>
+        <DetailsContainer>
+          <div>
             <h2>{postType}</h2>
-          </DetailsContainer>
-        </Inner>
+            <h1>{title}</h1>
+            <TagList>{renderTags}</TagList>
+          </div>
+        </DetailsContainer>
+        <ImageContainer>
+          <Image
+            src={postImage}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            alt="test"
+          />
+        </ImageContainer>
       </Main>
     </Link>
   );
 };
 
 const Main = styled.nav`
-  padding: 2% 1.5%;
-  width: 49%;
-  background: #f6f5f0;
-  margin-bottom: 40px;
+  flex: 0 1;
   cursor: pointer;
+  display: flex;
+  border-bottom: 1px solid #304141;
+  height: 300px;
 
-  @media (max-width: 850px) {
-    width: 100%;
-    margin-bottom: 20px;
+  &:hover {
+    background: #efe0e0;
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 `;
 
-const Inner = styled.article`
-  width: 100%;
-  padding-bottom: 133%;
+const ImageContainer = styled.figure`
+  width: 30%;
   overflow: hidden;
-  border: 3px solid #161414;
-  background: inherit;
-  background-image: url("${(props) => props.postImage}");
-  background-position: 100% 100%;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  height: 100%;
   position: relative;
-
-  @media (max-width: 850px) {
-    padding-bottom: 140%;
-  }
 `;
 
 const DetailsContainer = styled.section`
-  background: linear-gradient(180deg, #f6f5f0 70.4%, rgba(246, 245, 240, 0));
-  padding: 8% 5% 40px;
-  font-family: "HelveticaNeue-CondensedBold";
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1;
-  position: absolute;;
-  top: 0;
-  left: 0;
+  display: flex;
+  flex: 1;
+  border-right: 1px solid #304141;
+  padding: 4%;
+  align-items: center;
 
-  @media (max-width: 1200px) {
-    padding-right: 5%;
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
+
+  div {
+    display: inline-block;
   }
 
   h1 {
-    color: #cd5b69;
-    font-size: 40px;
-    transform-origin: bottom left;
-    transform: scale(0.8, 1.2);
+    font-size: 48px;
+    font-weight: bolder;
 
     @media (max-width: 1200px) {
       font-size: 28px;
     }
+
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
   }
 
   h2 {
-    color: #ccc;
-    font-size: 24px;
-    transform-origin: top left;
-    transform: scaleY(1.2);
+    font-size: 20px;
+    font-weight: bold;
 
     @media (max-width: 1200px) {
       font-size: 18px;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 14px;
+    }
+  }
+`;
+
+const TagList = styled.div`
+  margin-top: 10px;
+
+  div {
+    border: 2px solid #304141;
+    border-radius: 50px;
+    padding: 10px 14px;
+    margin-right: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+
+    @media (max-width: 1200px) {
+      padding: 5px 8px;
+      font-size: 12px;
+      border: 1px solid #304141;
+      font-weight: normal;
     }
   }
 `;

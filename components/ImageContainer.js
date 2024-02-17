@@ -7,11 +7,10 @@ const ImageContainer = ({ children }) => {
 const Main = styled.figure`
   text-align: center;
   margin-bottom: 35px;
-  margin-top: 20px;
-  width: 120%;
+  width: 110%;
   display: inline-block;
   position: relative;
-  left: -10%;
+  left: -5%;
 
   @media (max-width: 1200px) {
     margin-bottom: 10px;
