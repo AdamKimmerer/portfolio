@@ -259,9 +259,17 @@ const Section = styled.section`
 const SectionTitle = styled.header`
   border-right: 1px solid #304141;
   padding: 30px 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70px;
+
+  @media (max-width: 850px) {
+    width: 60px;
+  }
 
   @media (max-width: 650px) {
-    padding: 15px 10px;
+    width: 40px;
   }
 
   h1 {

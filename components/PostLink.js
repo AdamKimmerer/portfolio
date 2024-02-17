@@ -38,6 +38,10 @@ const Main = styled.nav`
   border-bottom: 1px solid #304141;
   height: 300px;
 
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+
   &:hover {
     background: #efe0e0;
   }
