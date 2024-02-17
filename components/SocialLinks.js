@@ -29,18 +29,28 @@ const SocialLinksComponent = ({ right }) => {
 
 const SocialLinks = styled.div`
   &.right a {
-    margin-right: 10px;
+    margin-right: 20px;
+
+    @media (max-width: 650px) {
+        margin-right: 14px;
+    }
   }
 
   &.left a {
-    margin-left: 10px;
+    margin-left: 20px;
+
+    @media (max-width: 650px) {
+        margin-left: 14px;
+    }
   }
 
   svg {
     width: 26px;
+    height: 26px;
 
     @media (max-width: 650px) {
         width: 20px;
+        height: 20px;
     }
   }
 `;
