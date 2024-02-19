@@ -40,6 +40,7 @@ export default function Home() {
               autoPlay
               muted
               loop
+              poster="/images/poster.png"
             >
               <source src="/images/spinning.webm" />
               Your browser does not support the video tag.
