@@ -7,7 +7,7 @@ const ImageContainer = ({ children }) => {
 const Main = styled.figure`
   text-align: center;
   margin-bottom: 35px;
-  width: 110%;
+  max-width: 110%;
   display: inline-block;
   position: relative;
   left: -5%;

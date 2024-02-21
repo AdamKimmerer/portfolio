@@ -156,6 +156,20 @@ const StoryContents = styled.section`
     }
   }
 
+  h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
+  }
+
   p {
     margin-bottom: 40px;
     font-size: 20px;

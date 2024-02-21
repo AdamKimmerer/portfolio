@@ -85,6 +85,13 @@ export default function Home() {
             <h1>Work</h1>
           </SectionTitle>
           <CardList>
+          <PostLink
+              link="/posts/finacy-mk-i"
+              title="Finacy Mk I"
+              postType="Case Study"
+              postImage="/images/thumbnails/finacy-thumb.jpg"
+              postTags={["Design", "Development"]}
+            />
             <PostLink
               link="/posts/know-your-vote"
               title="Know Your Vote T.O."
