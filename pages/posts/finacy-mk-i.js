@@ -157,8 +157,7 @@ const Post = () => {
       <h3>Animations</h3>
         <VideoContainer>
           <video
-            width="1920"
-            height="1080"
+            width="100%"
             preload="auto"
             playsInline
             autoPlay
@@ -239,7 +238,7 @@ const Post = () => {
 };
 
 const VideoContainer = styled.div`
-    max-width: 110%;
+    width: 110%;
     margin: auto;
     position: relative;
     left: -5%;
