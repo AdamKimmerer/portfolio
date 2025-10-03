@@ -190,7 +190,7 @@ const StoryContents = styled.section`
     font-size: 18px;
     margin-bottom: 40px;
     opacity: 0.8;
-    list-style: numbered;
+    list-style: decimal;
 
     @media (max-width: 650px) {
       font-size: 16px;
@@ -200,6 +200,16 @@ const StoryContents = styled.section`
 
     li {
       margin: 15px 30px;
+    }
+  }
+
+  ul {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+
+    li {
+      margin-bottom: 20px;
     }
   }
 

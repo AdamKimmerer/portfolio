@@ -52,7 +52,7 @@ export default function Home() {
               width={0}
               height={0}
               sizes="100vw"
-              alt="spinning thing"
+              alt="breathing thing"
             />
           </GifContainer>
         </AnimationContainer>
@@ -85,7 +85,14 @@ export default function Home() {
             <h1>Work</h1>
           </SectionTitle>
           <CardList>
-          <PostLink
+            <PostLink
+              link="/posts/tripshepherd"
+              title="Tripshepherd: The Pillars"
+              postType="Showcase"
+              postImage="/images/thumbnails/tripshepherd.jpg"
+              postTags={["Design", "Product Management"]}
+            />
+            <PostLink
               link="/posts/finacy-mk-i"
               title="Finacy Mk I"
               postType="Case Study"
