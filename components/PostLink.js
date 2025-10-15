@@ -8,28 +8,36 @@ const PostLink = ({ title, postType, postImage, link, external, postTags }) => {
   });
 
   return (
-    <Link href={link} passHref>
-      <Main>
-        <DetailsContainer>
-          <div>
-            <h2>{postType}</h2>
-            <h1>{title}</h1>
-            <TagList>{renderTags}</TagList>
-          </div>
-        </DetailsContainer>
-        <ImageContainer>
-          <Image
-            src={postImage}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            alt="test"
-          />
-        </ImageContainer>
-      </Main>
-    </Link>
+      <Link href={link} passHref>
+        <LinkContainer>
+          <Main>
+            <DetailsContainer>
+              <div>
+                <h2>{postType}</h2>
+                <h1>{title}</h1>
+                <TagList>{renderTags}</TagList>
+              </div>
+            </DetailsContainer>
+            <ImageContainer>
+              <Image
+                src={postImage}
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                alt="test"
+              />
+            </ImageContainer>
+          </Main>
+        </LinkContainer>
+      </Link>
   );
 };
+
+const LinkContainer = styled.a`
+  &:last-child nav {
+    border-bottom: none;
+  }
+`
 
 const Main = styled.nav`
   flex: 0 1;
@@ -44,10 +52,6 @@ const Main = styled.nav`
 
   &:hover {
     background: #efe0e0;
-  }
-
-  &:last-child {
-    border-bottom: none;
   }
 `;
 
