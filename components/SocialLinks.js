@@ -10,7 +10,7 @@ const SocialLinksComponent = ({ right }) => {
   return (
     <SocialLinks className={right ? "right" : "left"}>
       <a
-        href="https://drive.google.com/file/d/1ZD4MBtw6fhacGp6GkSgdgcMTM7oDTRm4/view?usp=sharing"
+        href="https://drive.google.com/file/d/1HJmHKcj9I39UJugdxO513ij94nBlPH7z/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
