@@ -196,60 +196,116 @@ const Post = () => {
         />
       </ImageContainer>
 
-      {/* <h1>Leadership in Action</h1>
+      <h1>Growth</h1>
+
+      <h2>Acquisition Through Deep-Linking Our Network</h2>
       <p>
-        My role as a product and design lead was less about designing screens
-        and more about creating clarity:
+        Thanks to the incredible work of our sales and partnership teams and
+        our MVP, we were able to onboard a significant network of content
+        creators and experience creators. By providing deep linking to our
+        network&apos;s profiles and experiences, we created a kind of symbiotic
+        relationship between TripShepherd&apos;s goals and our creator
+        network&apos;s.
       </p>
-      <ul>
-        <li>
-          <strong>Tradeoffs:</strong> Sequenced features for MVP impact without
-          overbuilding.
-        </li>
-        <li>
-          <strong>Alignment:</strong> Ran exec retreats to define OKRs and build
-          proto-Opportunity Solution Trees.
-        </li>
-        <li>
-          <strong>Cross-discipline:</strong> Introduced dual-track agile and
-          replaced QA with design QA + ownership.
-        </li>
-      </ul>
+      <p>
+        As creators shared their profiles and experiences for increased reach
+        and revenue, we gained a free acquisition channel.
+      </p>
       <ImageContainer>
         <Image
-          src={`/images/${path}/exec-retreat.png`}
+          src={`/images/${path}/growth-acquisition.png`}
           layout="intrinsic"
-          alt="Workshop board or proto-Opportunity Solution Tree diagram from executive retreat"
-          width="1500"
-          height="800"
+          alt="Placeholder graphic showing deep links from creator content to TripShepherd experiences"
+          width="2210"
+          height="1203"
         />
       </ImageContainer>
 
-      <h1>Impact & Vision</h1>
-      <ul>
-        <li>
-          <strong>Today:</strong> MVP launched with trust, discovery, and
-          booking flows aligned.
-        </li>
-        <li>
-          <strong>Tomorrow:</strong> Expanding into AI-generated itineraries,
-          pop-up event detection, and personalization from reviews.
-        </li>
-      </ul>
-      <ImageContainer>
-        <Image
-          src={`/images/${path}/ai-itinerary.png`}
-          layout="intrinsic"
-          alt="Conceptual mockup of AI itinerary assistant with dynamic map and personalized suggestions"
-          width="1500"
-          height="800"
-        />
-      </ImageContainer>
+      <h2>Low-Friction Exploration and Onboarding</h2>
       <p>
-        Big picture: TripShepherd is building the first platform that merges
-        social travel content with trusted, bookable experiences.
-      </p> */}
-      <h1>Accessibility Concerns</h1>
+        While this isn&apos;t anything novel, TripShepherd&apos;s combination
+        of travel and social commerce platforms is. Social commerce, in
+        general, is still fairly novel in the Western world. This meant we had
+        to allow low-friction exploration and onboarding to help users
+        understand the platform. Sign-up prompts only show up when a user wants
+        to perform an action which is tied to a user account. For example,
+        saving an experience. If they&apos;ve attempted to save an experience,
+        we&apos;ve already activated them.
+      </p>
+
+      <h3>Onboarding</h3>
+      <p>
+        Another complication with this novel combination of platforms meant we
+        had to implement patterns in a novel way. Some onboarding gave some
+        guidance, but we also didn&apos;t want to front-load information, so we
+        provided behaviour-specific onboarding when a user performed a relevant
+        action. A little bit of help when needed.
+      </p>
+      <VideoContainer>
+        <VideoWrapper>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label="Placeholder graphic illustrating low-friction onboarding flows tied to user actions"
+            width="480"
+            height="1031"
+          >
+            <source src={`/images/${path}/logged-out-feed.mp4`} type="video/mp4" />
+          </video>
+        </VideoWrapper>
+        <VideoWrapper>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label="Placeholder graphic illustrating low-friction onboarding flows tied to user actions"
+            width="480"
+            height="1038"
+          >
+            <source src={`/images/${path}/onboarding.mp4`} type="video/mp4" />
+          </video>
+        </VideoWrapper>
+      </VideoContainer>
+
+      <h2>Retention and Engagement Through Shared Profits</h2>
+      <p>
+        TripShepherd is a B2B2C app at its core. We&apos;re helping experience
+        creators book their experience, and content creators build their
+        audience. In this context, the work of the latter is advertising for
+        the former. So we created a profit-sharing feature. If a user books an
+        experience through a content creator&apos;s video, the content creator
+        gets a cut.
+      </p>
+      <p>
+        Of course, this creates massive retention benefits and encourages
+        content creators to push engagement on their content from their other
+        networks.
+      </p>
+      <p>
+        But we also allowed regular users to post their content after completing
+        an experience, so why not allow them the same profit-sharing? This
+        gives us an army of users, content creators, and experience creators
+        pushing their friends, audiences, and customers who get paid if their
+        content is engaged with.
+      </p>
+      <VideoWrapper>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label="Placeholder graphic illustrating low-friction onboarding flows tied to user actions"
+            width="480"
+            height="853"
+          >
+            <source src={`/images/${path}/money.mp4`} type="video/mp4" />
+          </video>
+        </VideoWrapper>
+
+      {/* <h1>Accessibility Concerns</h1>
       <p>
         From the start, we knew TripShepherd had to work for everyone. Travel
         apps lean heavily on video, imagery, and dense booking flows, all of
@@ -312,7 +368,7 @@ const Post = () => {
       <p>
         By embedding accessibility into TripShepherd’s foundation, we’re not
         just checking boxes, we’re expanding who gets to explore the world.
-      </p>
+      </p> */}
       
     </PostContainer>
   );
@@ -324,8 +380,32 @@ const VideoContainer = styled.div`
     position: relative;
     left: -5%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
     border: none;
+    max-height: 700px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      max-height: none;
+    }
+`;
+
+const VideoWrapper = styled.div`
+  max-width: 480px;
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+  
+  video {
+    width: 100%;
+    height: auto;
+    max-height: calc(700px - 35px);
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;
   }
 `;
 
