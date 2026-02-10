@@ -380,7 +380,7 @@ const VideoContainer = styled.div`
     position: relative;
     left: -5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border: none;
     max-height: 700px;
