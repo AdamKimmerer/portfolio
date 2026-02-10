@@ -112,10 +112,6 @@ const Post = () => {
         similarities were surprisingly evident in each group and behaviours
         aligned for the most part.
       </p>
-      {/* <ImageContainer>
-        <Image src="./bp-mvp-i_files/20180117_220003.jpg" alt="" />
-        <span>Almost there!</span>
-      </ImageContainer> */}
       <p>
         We quickly had to adjust our interviewing technique for pro and varsity
         athletes as each conversation degraded into something like a job
@@ -148,7 +144,6 @@ const Post = () => {
           width="652"
           height="369"
         />
-        <span></span>
       </ImageContainer>
       <h2>Choice</h2>
       <p>
@@ -238,7 +233,6 @@ const Post = () => {
           width="673"
           height="424"
         />
-        <span></span>
       </ImageContainer>
       <p>
         This left us with a difficult decision. We could either build our own

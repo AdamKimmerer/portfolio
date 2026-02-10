@@ -105,7 +105,6 @@ const Post = () => {
           width="1332"
           height="569"
         />
-        <span></span>
       </ImageContainer>
       <p>
           We started by understanding just what the org currently offers, how
@@ -165,7 +164,6 @@ const Post = () => {
           width="1149"
           height="923"
         />
-        <span></span>
       </ImageContainer>
       <h2>Discovery Workshops</h2>
       <p>
@@ -223,7 +221,6 @@ const Post = () => {
           width="1763"
           height="1995"
         />
-        <span></span>
       </ImageContainer>
       <h1>Sprints</h1>
       <p>
@@ -407,7 +404,6 @@ const Post = () => {
           width="1824"
           height="1071"
         />
-        <span></span>
       </ImageContainer>
       <h2>
         System Thinking vs Design Thinking

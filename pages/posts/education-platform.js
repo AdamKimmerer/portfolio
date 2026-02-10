@@ -28,7 +28,6 @@ const Post = () => {
           width="1440"
           height="6003"
         />
-        <span></span>
       </ImageContainer>
       <h1>Explore</h1>
       <p>
@@ -46,7 +45,6 @@ const Post = () => {
           width="2500"
           height="1433"
         />
-        <span></span>
       </ImageContainer>
       <h1>Onboarding</h1>
       <p>
@@ -62,7 +60,6 @@ const Post = () => {
           width="2500"
           height="726"
         />
-        <span></span>
       </ImageContainer>
       <h1>Settings</h1>
       <p>
@@ -77,7 +74,6 @@ const Post = () => {
           width="2500"
           height="726"
         />
-        <span></span>
       </ImageContainer>
       <h1>Dashboard</h1>
       <p>
@@ -94,7 +90,6 @@ const Post = () => {
           width="2117"
           height="750"
         />
-        <span></span>
       </ImageContainer>
     </PostContainer>
   );

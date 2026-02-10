@@ -216,10 +216,6 @@ const Post = () => {
           how far you can go in your innovation.
         </i>
       </p>
-      {/* <div class="story-content-image">
-        <img src="./bp-mpv-ii_files/SettingsVert.png" alt="" />
-        <span></span>
-      </div> */}
       <h1>An Apology</h1>
       <p>
         I realize that developers reading this post will be disappointed with

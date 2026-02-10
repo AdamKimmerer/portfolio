@@ -2,7 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
 
-const PostLink = ({ title, postType, postImage, link, external, postTags }) => {
+const PostLink = ({ title, postType, postImage, link, postTags }) => {
   const renderTags = postTags.map((tag, i) => {
     return <div key={i}>{tag}</div>;
   });
@@ -23,8 +23,8 @@ const PostLink = ({ title, postType, postImage, link, external, postTags }) => {
                 src={postImage}
                 layout="fill"
                 objectFit="cover"
-                quality={100}
-                alt="test"
+                quality={80}
+                alt={title}
               />
             </ImageContainer>
           </Main>
@@ -58,7 +58,7 @@ const Main = styled.nav`
 const ImageContainer = styled.figure`
   width: 30%;
   overflow: hidden;
-  height: 100%;
+  height: auto;
   position: relative;
 `;
 

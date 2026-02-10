@@ -238,14 +238,13 @@ const Post = () => {
 };
 
 const VideoContainer = styled.div`
-    width: 110%;
-    margin: auto;
-    position: relative;
-    left: -5%;
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-  }
+  width: 110%;
+  margin: auto;
+  position: relative;
+  left: -5%;
+  display: flex;
+  justify-content: flex-start;
+  border: none;
 `;
 
 export default Post;

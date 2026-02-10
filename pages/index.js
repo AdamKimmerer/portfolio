@@ -1,18 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
-import { useEffect } from "react";
 import Link from "next/link";
 
 import PostLink from "../components/PostLink";
 import SocialLinks from "../components/SocialLinks";
 
 export default function Home() {
-  useEffect(() => {
-    const vid = document.getElementsByTagName("video");
-    console.log(vid[0]);
-  }, []);
-
   return (
     <div>
       <Head>
@@ -53,6 +47,7 @@ export default function Home() {
               height={0}
               sizes="100vw"
               alt="breathing thing"
+              poster="/images/breathe-poster.webp"
             />
           </GifContainer>
         </AnimationContainer>
@@ -174,7 +169,7 @@ const LogoContainer = styled.header`
     font-style: italic;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: Lara;
+    font-family: Lora;
 
     @media (max-width: 1200px) {
       padding-left: 10%;
@@ -208,7 +203,7 @@ const Navigation = styled.nav`
     right: 20px;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 650px) {
     top: 10px;
     right: 10px;
   }
@@ -224,7 +219,7 @@ const Navigation = styled.nav`
       margin-left: 16px;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 650px) {
       font-size: 16px;
       margin-left: 16px;
     }

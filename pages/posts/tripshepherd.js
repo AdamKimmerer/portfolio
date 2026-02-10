@@ -248,7 +248,7 @@ const Post = () => {
             loop
             muted
             playsInline
-            aria-label="Placeholder graphic illustrating low-friction onboarding flows tied to user actions"
+            aria-label="Gif showing the logged out feed"
             width="480"
             height="1031"
           >
@@ -261,7 +261,7 @@ const Post = () => {
             loop
             muted
             playsInline
-            aria-label="Placeholder graphic illustrating low-friction onboarding flows tied to user actions"
+            aria-label="Gif showing the onboarding flow"
             width="480"
             height="1038"
           >
@@ -297,7 +297,7 @@ const Post = () => {
             loop
             muted
             playsInline
-            aria-label="Placeholder graphic illustrating low-friction onboarding flows tied to user actions"
+            aria-label="Gif showing the profit-sharing feature"
             width="480"
             height="853"
           >
