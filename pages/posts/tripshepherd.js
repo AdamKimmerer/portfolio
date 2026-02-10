@@ -304,6 +304,10 @@ const Post = () => {
             <source src={`/images/${path}/money.mp4`} type="video/mp4" />
           </video>
         </VideoWrapper>
+        <h2>Results</h2>
+        <p>Tripshepherd now hosts hundreds of experiences across Niagara Falls, Toront, and New York City, with content posted from users around the Americas.</p>
+        <p>Our onboarding features helped us onboard 1000s of users in the first few months, after seeing some pretty dismal retention rates due to the novelty of the platform.</p>
+        <p>Our retention and engagement features have also led to the Creator Marketplace, currently in closed beta. This allows content creators and experience creators to partner with each other, helping experience creators grow their audience and content creators grow their income.</p>
 
       {/* <h1>Accessibility Concerns</h1>
       <p>
