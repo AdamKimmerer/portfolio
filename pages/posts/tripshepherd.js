@@ -105,7 +105,7 @@ const Post = () => {
       <p>
         Users who complete an experience can post their own content and earn the
         same way creators do. Satisfied customers become a distribution layer.
-        They invite friends, share content, and grow the platform's supply of
+        They invite friends, share content, and grow the platform&apos;s supply of
         both content and travelers at the same time.
       </p>
       <p>
@@ -190,7 +190,7 @@ const Post = () => {
       </p>
       <p>
         The shareable booking link is a distribution mechanic. When a traveler
-        shares their booking, they're doing acquisition for the platform.
+        shares their booking, they&apos;re doing acquisition for the platform.
       </p>
       <ImageContainer>
         <Image
@@ -231,7 +231,7 @@ const Post = () => {
       <h1>Low-Friction Onboarding</h1>
       <p>
         Social commerce is still novel in Western markets, which created an
-        onboarding problem a standard tutorial couldn't solve. Front-loading
+        onboarding problem a standard tutorial couldn&apos;t solve. Front-loading
         information kills activation before users understand the value.
       </p>
       <p>
@@ -302,7 +302,7 @@ const Post = () => {
       We used ChatGPT throughout the project as a structured thinking partner. The most valuable application was documentation: generating a canonical MVP Spine and Core PRD designed from the start to be ingested by AI coding tools like Cursor downstream. That created a single source of truth that kept design and engineering aligned across three continents without constant syncs.
       </p>
       <p>
-      We also used it to pressure-test edge cases before they hit design or engineering. Booking conflicts, host cancellations, missing location permissions, refund logic. Running those scenarios early in a draft, critique, refine loop surfaced failure modes that would have been expensive to find later. For a lean product team working with distributed squads, AI acted as the team members we didn't have.
+      We also used it to pressure-test edge cases before they hit design or engineering. Booking conflicts, host cancellations, missing location permissions, refund logic. Running those scenarios early in a draft, critique, refine loop surfaced failure modes that would have been expensive to find later. For a lean product team working with distributed squads, AI acted as the team members we didn&apos;t have.
       </p>
 {/*
       <h1>Accessibility Concerns</h1>
