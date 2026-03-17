@@ -25,21 +25,27 @@ const Post = () => {
       </ImageContainer>
       <h1>The Challenge</h1>
       <p>
-        Travelers don’t trust generic OTA listings. Reviews are anonymous,
-        itineraries are vague, and there’s little accountability once the
-        booking is done. Younger travelers, especially Gen Z, have shifted their
-        discovery to TikTok and Instagram, but those platforms don’t connect to
-        bookable experiences.
+        Travel has a trust problem and a discovery problem, and they&apos;re the
+        same problem.
       </p>
       <p>
-        Hosts need better tools to scale trust. They can’t just rely on a
-        profile picture and a line of text. They need structured ways to show
-        what their experiences are, who they are, and why travelers should trust
-        them.
+        Travelers don&apos;t trust generic OTA listings. Reviews are anonymous,
+        itineraries are vague, and there&apos;s no accountability after the
+        booking. Younger travelers have mostly moved their discovery to TikTok
+        and Instagram anyway, but those platforms don&apos;t connect to anything
+        bookable. You see a great tour in Kyoto, you close the app, you forget
+        about it.
       </p>
       <p>
-        Our job was to build a system where trust and discovery were inseparable
-        , not bolted on after the fact.
+        On the supply side, experience hosts are good at running experiences,
+        not building audiences. They need to fill bookings but mostly hate doing
+        their own marketing.
+      </p>
+      <p>
+        Content creators can build audiences and drive discovery, but travel
+        content doesn&apos;t convert to income without a booking layer
+        underneath it. Three parties with complementary needs and no mechanism
+        connecting them.
       </p>
       <ImageContainer>
         <Image
@@ -53,32 +59,64 @@ const Post = () => {
 
       <h1>My Role</h1>
       <p>
-        I led product and design across the MVP, working with squads distributed
-        across Canada, Pakistan, and Brazil. My role wasn’t just to design flows
-        or prioritize a backlog, it was to create the systems and frameworks
-        that allowed the team to move quickly, stay aligned, and build something
-        coherent.
+        I led product and design across the MVP, working with distributed squads
+        across Canada, Pakistan, and Brazil. The work covered defining the
+        marketplace mechanics, translating them into a coherent product system,
+        and creating the frameworks that let the team move fast and stay
+        aligned.
       </p>
-      <ul>
-        <li>
-          <strong>Product Strategy:</strong> Sequenced the roadmap into three
-          themed sprints (social → discovery → booking).
-        </li>
-        <li>
-          <strong>Design Leadership:</strong> Directed app navigation, feed
-          design, booking flows, and review functionality.
-        </li>
-        <li>
-          <strong>Cross-functional Orchestration:</strong> Aligned engineers,
-          designers, and ops across three continents.
-        </li>
-        <li>
-          <strong>Org Practices:</strong> Transitioned teams from Jira to Plane
-          and restructured epics, stories, and tasks to fit hybrid squads.
-        </li>
-      </ul>
-      <h1>The Approach</h1>
-      <p>We worked in arcs, each sprint layering onto the last:</p>
+      <p>
+        That included product strategy and roadmap sequencing, design leadership
+        across the full app, cross-functional orchestration across three time
+        zones, and restructuring how the team worked in Plane after migrating
+        from Jira.
+      </p>
+      <h1>The Marketplace Design</h1>
+      <p>
+        Before any UX work, we had to solve a classic chicken-and-egg problem:
+        no experiences without hosts, no hosts without travelers, no travelers
+        without content, no content without creators who have a financial reason
+        to produce it.
+      </p>
+      <p>
+        The answer was a profit-sharing model that gives every participant a
+        reason to do the platform&apos;s distribution work voluntarily.
+      </p>
+      <ImageContainer>
+        <Image
+          src={`/images/${path}/flywheel.png`}
+          layout="intrinsic"
+          alt="Profit-sharing model"
+          width="733"
+          height="503"
+        />
+      </ImageContainer>
+      <p>
+        Hosts are good at running experiences, not marketing them. By partnering
+        with content creators, they outsource discovery without paying upfront.
+        Creators earn on bookings, so the incentive to perform is built in.
+      </p>
+      <p>
+        Content creators post travel content to their existing audiences. When
+        someone books an experience through their content, they earn a cut. That
+        gives them a financial reason to push their content harder across every
+        channel they own.
+      </p>
+      <p>
+        Users who complete an experience can post their own content and earn the
+        same way creators do. Satisfied customers become a distribution layer.
+        They invite friends, share content, and grow the platform's supply of
+        both content and travelers at the same time.
+      </p>
+      <p>
+        Each participant has a financial reason to grow the platform. The
+        consumer UX is the interface through which they do it.
+      </p>
+      <h1>MVP Pillars</h1>
+      <p>
+        With the marketplace mechanics defined, we built the foundations of the
+        consumer app around three functional pillars:
+      </p>
       <ol>
         <li>
           <strong>Videos & Profiles:</strong> gave us the social foundation,
@@ -102,22 +140,19 @@ const Post = () => {
           height="416"
         />
       </ImageContainer>
-      <p>
-        The sequencing mattered. We didn’t start with booking because trust
-        isn’t something you bolt on. It has to grow out of the way people
-        discover, engage, and connect.
-      </p>
 
       <h1>Solution Pillars</h1>
       <h2>1. Trust & Transparency</h2>
-      <ul>
-        <li>
-          Rich experience pages with itineraries, host profiles, and transparent
-          pricing.
-        </li>
-        <li>Video & text reviews for accountability.</li>
-        <li>Cancellation flows with clear refund breakdowns.</li>
-      </ul>
+      <p>
+        The experience detail page is where discovery converts to commitment. It
+        needed to establish host credibility, communicate what travelers are
+        actually getting, and remove the ambiguity that kills bookings on
+        generic OTAs.
+      </p>
+      <p>
+        Rich itineraries, host profiles, transparent pricing, and video reviews
+        all live here as the foundation for that trust.
+      </p>
       <ImageContainer>
         <Image
           src={`/images/${path}/experience-page.png`}
@@ -128,16 +163,14 @@ const Post = () => {
         />
       </ImageContainer>
 
-      <h2>2. Quality Content & Discovery</h2>
-      <ul>
-        <li>
-          TikTok-style video feed with city, experience, and following filters.
-        </li>
-        <li>
-          Social tagging, location metadata, and &apos;See More&apos; deep links
-          to experiences.
-        </li>
-      </ul>
+      <h2>2. Authentic Content & Discovery</h2>
+      <p>
+        The video feed is the entry point for most users and had to feel native
+        to how Gen Z already discovers travel. Short-form, scrollable, social.
+        City, experience, and following filters let users narrow without
+        friction. Deep links from each video connect directly to bookable
+        experiences, closing the gap between inspiration and action.
+      </p>
       <ImageContainer>
         <Image
           src={`/images/${path}/feed.png`}
@@ -149,16 +182,16 @@ const Post = () => {
       </ImageContainer>
 
       <h2>3. Scalable IA & Booking</h2>
-      <ul>
-        <li>
-          Global search with filters for city, date, price, and accessibility.
-        </li>
-        <li>Experiences hub with tabs for all, booked, and saved.</li>
-        <li>
-          Booking confirmation with shareable link, guest management, and refund
-          policies.
-        </li>
-      </ul>
+      <p>
+        Global search with filters for city, date, price, and accessibility. An
+        Experiences hub with tabs for all, booked, and saved. Booking
+        confirmation with shareable links, guest management, and explicit refund
+        policies.
+      </p>
+      <p>
+        The shareable booking link is a distribution mechanic. When a traveler
+        shares their booking, they're doing acquisition for the platform.
+      </p>
       <ImageContainer>
         <Image
           src={`/images/${path}/booking-confirmation.png`}
@@ -170,13 +203,12 @@ const Post = () => {
       </ImageContainer>
 
       <h2>4. Operational Foundations</h2>
-      <ul>
-        <li>
-          BOAT moderation tool extended to TripShepherd for content, users, and
-          experiences.
-        </li>
-        <li>Analytics framework spanning growth, sales, and engagement.</li>
-      </ul>
+      <p>
+        We extended BOAT, an existing moderation tool, to cover TripShepherd
+        content, users, and experiences. We also built an analytics framework
+        across growth, sales, and engagement to give the team visibility into
+        how the flywheel was actually performing.
+      </p>
 
       <h1>Reviews as the Keystone</h1>
       <p>Reviews became the growth loop, more than just feedback:</p>
@@ -196,50 +228,18 @@ const Post = () => {
         />
       </ImageContainer>
 
-      <h1>Growth</h1>
-
-      <h2>Acquisition Through Deep-Linking Our Network</h2>
+      <h1>Low-Friction Onboarding</h1>
       <p>
-        Thanks to the incredible work of our sales and partnership teams and
-        our MVP, we were able to onboard a significant network of content
-        creators and experience creators. By providing deep linking to our
-        network&apos;s profiles and experiences, we created a kind of symbiotic
-        relationship between TripShepherd&apos;s goals and our creator
-        network&apos;s.
+        Social commerce is still novel in Western markets, which created an
+        onboarding problem a standard tutorial couldn't solve. Front-loading
+        information kills activation before users understand the value.
       </p>
       <p>
-        As creators shared their profiles and experiences for increased reach
-        and revenue, we gained a free acquisition channel.
-      </p>
-      <ImageContainer>
-        <Image
-          src={`/images/${path}/growth-acquisition.png`}
-          layout="intrinsic"
-          alt="Placeholder graphic showing deep links from creator content to TripShepherd experiences"
-          width="2210"
-          height="1203"
-        />
-      </ImageContainer>
-
-      <h2>Low-Friction Exploration and Onboarding</h2>
-      <p>
-        While this isn&apos;t anything novel, TripShepherd&apos;s combination
-        of travel and social commerce platforms is. Social commerce, in
-        general, is still fairly novel in the Western world. This meant we had
-        to allow low-friction exploration and onboarding to help users
-        understand the platform. Sign-up prompts only show up when a user wants
-        to perform an action which is tied to a user account. For example,
-        saving an experience. If they&apos;ve attempted to save an experience,
-        we&apos;ve already activated them.
-      </p>
-
-      <h3>Onboarding</h3>
-      <p>
-        Another complication with this novel combination of platforms meant we
-        had to implement patterns in a novel way. Some onboarding gave some
-        guidance, but we also didn&apos;t want to front-load information, so we
-        provided behaviour-specific onboarding when a user performed a relevant
-        action. A little bit of help when needed.
+        Instead we used behavior-specific onboarding. Guidance appeared when a
+        user attempted a relevant action for the first time. Sign-up prompts
+        only triggered when an action required an account, like saving an
+        experience. By that point the user had already signaled intent, which
+        meant activation happened before we asked them to commit.
       </p>
       <VideoContainer>
         <VideoWrapper>
@@ -252,7 +252,10 @@ const Post = () => {
             width="480"
             height="1031"
           >
-            <source src={`/images/${path}/logged-out-feed.mp4`} type="video/mp4" />
+            <source
+              src={`/images/${path}/logged-out-feed.mp4`}
+              type="video/mp4"
+            />
           </video>
         </VideoWrapper>
         <VideoWrapper>
@@ -270,54 +273,39 @@ const Post = () => {
         </VideoWrapper>
       </VideoContainer>
 
-      <h2>Retention and Engagement Through Shared Profits</h2>
+      <h1>Results</h1>
       <p>
-        TripShepherd is a B2B2C app at its core. We&apos;re helping experience
-        creators book their experience, and content creators build their
-        audience. In this context, the work of the latter is advertising for
-        the former. So we created a profit-sharing feature. If a user books an
-        experience through a content creator&apos;s video, the content creator
-        gets a cut.
+        TripShepherd now hosts hundreds of experiences across Niagara Falls,
+        Toronto, and New York City, with content posted from users across the
+        Americas. Behavior-specific onboarding reversed early retention problems
+        caused by platform novelty. The profit-sharing mechanic has since
+        evolved into a Creator Marketplace, currently in closed beta, allowing
+        content creators and experience hosts to partner directly.
       </p>
-      <p>
-        Of course, this creates massive retention benefits and encourages
-        content creators to push engagement on their content from their other
-        networks.
-      </p>
-      <p>
-        But we also allowed regular users to post their content after completing
-        an experience, so why not allow them the same profit-sharing? This
-        gives us an army of users, content creators, and experience creators
-        pushing their friends, audiences, and customers who get paid if their
-        content is engaged with.
-      </p>
-      <VideoWrapper>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            aria-label="Gif showing the profit-sharing feature"
-            width="480"
-            height="853"
-          >
-            <source src={`/images/${path}/money.mp4`} type="video/mp4" />
-          </video>
-        </VideoWrapper>
-        <h2>Results</h2>
-        <p>Tripshepherd now hosts hundreds of experiences across Niagara Falls, Toront, and New York City, with content posted from users around the Americas.</p>
-        <p>Our onboarding features helped us onboard 1000s of users in the first few months, after seeing some pretty dismal retention rates due to the novelty of the platform.</p>
-        <p>Our retention and engagement features have also led to the Creator Marketplace, currently in closed beta. This allows content creators and experience creators to partner with each other, helping experience creators grow their audience and content creators grow their income.</p>
 
-      {/* <h1>Accessibility Concerns</h1>
+      <VideoWrapper>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-label="Gif showing the profit-sharing feature"
+          width="480"
+          height="853"
+        >
+          <source src={`/images/${path}/money.mp4`} type="video/mp4" />
+        </video>
+      </VideoWrapper>
+
+      <h1>A Note on our AI Approach</h1>
       <p>
-        From the start, we knew TripShepherd had to work for everyone. Travel
-        apps lean heavily on video, imagery, and dense booking flows, all of
-        which can become barriers if not designed with accessibility in mind. To
-        address this, we aligned our design and development process with the
-        AODA pillars (POUR framework: Perceivable, Operable, Understandable,
-        Robust).
+      We used ChatGPT throughout the project as a structured thinking partner. The most valuable application was documentation: generating a canonical MVP Spine and Core PRD designed from the start to be ingested by AI coding tools like Cursor downstream. That created a single source of truth that kept design and engineering aligned across three continents without constant syncs.
       </p>
+      <p>
+      We also used it to pressure-test edge cases before they hit design or engineering. Booking conflicts, host cancellations, missing location permissions, refund logic. Running those scenarios early in a draft, critique, refine loop surfaced failure modes that would have been expensive to find later. For a lean product team working with distributed squads, AI acted as the team members we didn't have.
+      </p>
+{/*
+      <h1>Accessibility Concerns</h1>
       <p>
         <strong>Perceivable</strong>: Every image, icon, and video has alt text
         or captions. We built video uploads with automatic captioning in mind,
@@ -373,26 +361,25 @@ const Post = () => {
         By embedding accessibility into TripShepherd’s foundation, we’re not
         just checking boxes, we’re expanding who gets to explore the world.
       </p> */}
-      
     </PostContainer>
   );
 };
 
 const VideoContainer = styled.div`
-    width: 110%;
-    margin: auto;
-    position: relative;
-    left: -5%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: none;
-    max-height: 700px;
+  width: 110%;
+  margin: auto;
+  position: relative;
+  left: -5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  max-height: 700px;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      max-height: none;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    max-height: none;
+  }
 `;
 
 const VideoWrapper = styled.div`
@@ -402,7 +389,7 @@ const VideoWrapper = styled.div`
   display: flex;
   padding-bottom: 35px;
   box-sizing: border-box;
-  
+
   video {
     width: 100%;
     height: auto;
