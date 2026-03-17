@@ -88,6 +88,34 @@ export default function Home() {
               postTags={["Design", "Product Management"]}
             />
             <PostLink
+              link="/posts/modernizing-health-data"
+              title="Modernizing Health Data"
+              postType="Case Study"
+              postImage="/images/thumbnails/speaker.png"
+              postTags={["Design", "Development"]}
+            />
+            <PostLink
+              link="/posts/fake-app-for-real-transformation"
+              title="Fake App for Real Transformation"
+              postType="Article"
+              postImage="/images/thumbnails/chunes.png"
+              postTags={["Design", "Product"]}
+            />
+            <PostLink
+              link="/posts/ballprk-mobile-redesign"
+              title="BALLPRK Redesign | Mobile"
+              postType="Showcase"
+              postImage="/images/thumbnails/bp2.jpg"
+              postTags={["Design"]}
+            />
+            <PostLink
+              link="https://www.figma.com/file/OTNCjDUkd7JB9PfUD2dHIj/Untitled?type=whiteboard&node-id=0%3A1&t=yuWt5iJvP0Id7aHb-1"
+              title="Strategic Design Process Illustrated"
+              postType="External Link"
+              postImage="/images/thumbnails/process.png"
+              postTags={["Design"]}
+            />
+            <PostLink
               link="/posts/finacy-mk-i"
               title="Finacy Mk I"
               postType="Case Study"
@@ -99,34 +127,6 @@ export default function Home() {
               title="Know Your Vote T.O."
               postType="Showcase"
               postImage="/images/thumbnails/tpl.png"
-              postTags={["Design"]}
-            />
-            <PostLink
-              link="/posts/fake-app-for-real-transformation"
-              title="Fake App for Real Transformation"
-              postType="Article"
-              postImage="/images/thumbnails/chunes.png"
-              postTags={["Design", "Product"]}
-            />
-            <PostLink
-              link="https://www.figma.com/file/OTNCjDUkd7JB9PfUD2dHIj/Untitled?type=whiteboard&node-id=0%3A1&t=yuWt5iJvP0Id7aHb-1"
-              title="Strategic Design Process Illustrated"
-              postType="External Link"
-              postImage="/images/thumbnails/process.png"
-              postTags={["Design"]}
-            />
-            <PostLink
-              link="/posts/modernizing-health-data"
-              title="Modernizing Health Data"
-              postType="Case Study"
-              postImage="/images/thumbnails/speaker.png"
-              postTags={["Design", "Development"]}
-            />
-            <PostLink
-              link="/posts/ballprk-mobile-redesign"
-              title="BALLPRK Redesign | Mobile"
-              postType="Showcase"
-              postImage="/images/thumbnails/bp2.jpg"
               postTags={["Design"]}
             />
             <PostLink
