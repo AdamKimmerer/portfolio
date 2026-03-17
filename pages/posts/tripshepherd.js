@@ -87,8 +87,8 @@ const Post = () => {
           src={`/images/${path}/flywheel.png`}
           layout="intrinsic"
           alt="Profit-sharing model"
-          width="733"
-          height="503"
+          width="1132"
+          height="671"
         />
       </ImageContainer>
       <p>
