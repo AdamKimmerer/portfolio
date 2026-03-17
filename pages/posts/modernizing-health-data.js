@@ -257,8 +257,8 @@ const Post = () => {
           src={`/images/${path}/ART.svg`}
           layout="intrinsic"
           alt="An illustration of the ART Methodology"
-          width="1824"
-          height="1071"
+          width="1440"
+          height="804"
         />
       </ImageContainer>
       <p>
